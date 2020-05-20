@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="272.0" prefWidth="429.0">
+         <children>
+            <Button fx:id="imdoctor" layoutX="69.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="292.0" onAction="#gotodoctor" text="我是医生" />
+            <Button fx:id="impatient" layoutX="69.0" layoutY="168.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="292.0" onAction="#gotopatient" text="我是患者" />
+            <Text layoutX="89.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="欢迎使用中心医院管理系统">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

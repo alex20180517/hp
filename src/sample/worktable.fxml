@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Worktable">
+   <children>
+      <TabPane layoutY="57.0" prefHeight="298.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="病人列表">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="patientInfoTable" prefHeight="298.0" prefWidth="600.0">
+                          <columns>
+                            <TableColumn fx:id="ghbhColumn" prefWidth="136.0" text="挂号编号" />
+                            <TableColumn fx:id="brxmColumn" prefWidth="129.0" text="病人姓名" />
+                              <TableColumn fx:id="rqsjColumn" prefWidth="208.0" text="挂号日期时间" />
+                              <TableColumn fx:id="hzlbColumn" prefWidth="126.0" text="号种类别" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="收入列表">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="incomeInfoTable" prefHeight="268.0" prefWidth="600.0">
+                          <columns>
+                            <TableColumn fx:id="KSMCColumn" prefWidth="96.0" text="科室名称" />
+                            <TableColumn fx:id="YSBHColumn" prefWidth="98.0" text="医生编号" />
+                              <TableColumn fx:id="YSMCColumn" prefWidth="108.0" text="医生姓名" />
+                              <TableColumn fx:id="HZLBColumn" prefWidth="104.0" text="号种类别" />
+                              <TableColumn fx:id="GHRCColumn" prefWidth="93.0" text="挂号人次" />
+                              <TableColumn fx:id="SRHJColumn" prefWidth="100.0" text="收入合计" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Text fx:id="huanyin" layoutX="31.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="中心医院管理系统">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Label fx:id="timeLabel" layoutX="16.0" layoutY="407.0" text="Label" />
+   </children>
+</AnchorPane>

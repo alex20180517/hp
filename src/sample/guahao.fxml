@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Guahao">
+   <children>
+      <Text layoutX="252.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="门诊挂号">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Line endX="200.0" layoutX="300.0" layoutY="70.0" startX="-200.0" />
+      <Text layoutX="48.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="科室名称" />
+      <TextField fx:id="keshiName" layoutX="113.0" layoutY="114.0" onKeyTyped="#on_enter_keshiName" />
+      <Text layoutX="310.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="医生姓名" />
+      <TextField fx:id="doctorName" layoutX="374.0" layoutY="114.0" onKeyTyped="#on_enter_doctorName" />
+      <Text layoutX="48.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="号种类别" />
+      <Text layoutX="48.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="交款金额" />
+      <TextField fx:id="jiaokuanValue" disable="true" layoutX="113.0" layoutY="209.0" />
+      <Text layoutX="48.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="找零金额" />
+      <TextField fx:id="zhaolingValue" disable="true" layoutX="113.0" layoutY="257.0" />
+      <Text layoutX="310.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="号种名称" />
+      <Text layoutX="310.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="应缴金额" />
+      <Text layoutX="310.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="挂号号码" />
+      <TextField fx:id="haozhongName" layoutX="374.0" layoutY="163.0" />
+      <TextField fx:id="yingjiaoValue" disable="true" layoutX="374.0" layoutY="209.0" />
+      <TextField fx:id="guahaoNumber" editable="false" layoutX="374.0" layoutY="257.0" onMouseClicked="#on_guahaoNumber_clicked" />
+      <Button fx:id="confirm" layoutX="74.0" layoutY="323.0" mnemonicParsing="false" onAction="#Sure" prefHeight="38.0" prefWidth="107.0" text="确定" />
+      <Button fx:id="clear" layoutX="247.0" layoutY="323.0" mnemonicParsing="false" onMouseClicked="#Clear" prefHeight="38.0" prefWidth="107.0" text="清除" />
+      <Button layoutX="428.0" layoutY="323.0" mnemonicParsing="false" onAction="#Quit" prefHeight="38.0" prefWidth="107.0" text="退出" />
+      <ChoiceBox fx:id="haozhongType" layoutX="113.0" layoutY="163.0" prefHeight="27.0" prefWidth="161.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="专家号" />
+               <String fx:value="普通号" />
+            </FXCollections>
+         </items>
+      </ChoiceBox>
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Doctorlogin">
+   <children>
+      <TextField fx:id="username" layoutX="170.0" layoutY="222.0" prefHeight="32.0" prefWidth="192.0" promptText="请输入用户名" />
+      <Text layoutX="89.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户名" />
+      <Text layoutX="89.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密码" />
+      <Button layoutX="401.0" layoutY="222.0" mnemonicParsing="false" onAction="#check" prefHeight="87.0" prefWidth="139.0" text="登录">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Text layoutX="193.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="医生工作台">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Text>
+      <Line endX="400.0" layoutX="150.0" layoutY="163.0" startX="-100.0" />
+      <PasswordField fx:id="passwords" layoutX="170.0" layoutY="277.0" prefHeight="32.0" prefWidth="192.0" promptText="请输入密码" />
+   </children>
+</AnchorPane>
